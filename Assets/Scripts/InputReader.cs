@@ -7,6 +7,7 @@
     private Controls _controls;
     public event Action<Vector2> MoveEvent;
     public event Action<bool> PrimaryFireEvent;
+    public Vector2 AimPosition { get; private set; }
     private void OnEnable()
     {
         if (_controls == null)
@@ -28,4 +29,10 @@
         if (context.performed)  PrimaryFireEvent?.Invoke(true);
         if (context.canceled)   PrimaryFireEvent?.Invoke(false);
     }
- }
+
+    public void OnAim(InputAction.CallbackContext context)
+    {
+        // Screen-space (pixel) position
+        AimPosition = context.ReadValue<Vector2>();
+    }
+}
