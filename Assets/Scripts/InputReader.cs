@@ -4,7 +4,7 @@
  [CreateAssetMenu(fileName = "InputReader", menuName = "Input/Input Reader")]
  public class InputReader : ScriptableObject, Controls.IPlayerActions
  {
-    //Mustafa Karagöz, 2024, CSEP
+    //Old Witch Input System reference
     private Controls _controls;
     public event Action<Vector2> MoveEvent;
     public event Action<bool> PrimaryFireEvent;
