@@ -66,5 +66,8 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "game-dev-course-project.sln"
+    "dotnet.defaultSolution": "game-dev-course-project-CENG462.sln",
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
 }
