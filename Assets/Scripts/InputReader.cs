@@ -4,7 +4,7 @@
  [CreateAssetMenu(fileName = "InputReader", menuName = "Input/Input Reader")]
  public class InputReader : ScriptableObject, Controls.IPlayerActions
  {
-    //Sa
+    //Sashka made me do it
     private Controls _controls;
     public event Action<Vector2> MoveEvent;
     public event Action<bool> PrimaryFireEvent;
